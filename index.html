@@ -6,6 +6,131 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation bar at the top -->
+  <nav class="site-navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="cta-banner">
+    <div class="about-row">
+      <figure class="info-image">
+        <img src="img/IMG_5568.jpeg" alt="My Photo" width="100%">
+        <figcaption class="img-name">Robert Leon</figcaption>
+      </figure>
+      <div class="about-box">
+        <header>
+          <h1 class="cta-heading">About Myself</h1>
+        </header>
+        <p class="cta-description">
+          Hello! I am a passionate software developer with a love for video games and music. I enjoy working creatively and making my ideas come to life! 
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="info-section">
+    <article class="info-text">
+      <h3>My Skills</h3>
+      <div class="skills-row">
+        <div class="skill-item">
+          <img src="https://fonts.gstatic.com/s/i/materialicons/html/v1/24px.svg" alt="HTML Icon">
+          <span>HTML</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://fonts.gstatic.com/s/i/materialicons/css/v1/24px.svg" alt="CSS Icon">
+          <span>CSS</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://fonts.gstatic.com/s/i/materialicons/javascript/v1/24px.svg" alt="JavaScript Icon">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://fonts.gstatic.com/s/i/materialicons/chat/v1/24px.svg" alt="Communication Icon">
+          <span>Communication</span>
+        </div>
+        <div class="skill-item">
+          <img src="https://fonts.gstatic.com/s/i/materialicons/hearing/v1/24px.svg" alt="Listening Icon">
+          <span>Listening</span>
+        </div>
+      </div>
+    </article>
+    <article class="projects-box">
+      <h3>My Projects</h3>
+      <div class="projects-row">
+        <div class="project-item">
+          <span>Project 1 (Coming Soon)</span>
+        </div>
+        <div class="project-item">
+          <span>Project 2 (Coming Soon)</span>
+        </div>
+        <div class="project-item">
+          <span>Project 3 (Coming Soon)</span>
+        </div>
+      </div>
+    </article>
+    <h3 class="more-about-title">A Little More About Me</h3>
+    <article class="games-box">
+      <h3>My Current Favorite Video Games</h3>
+      <div class="games-row">
+        <div class="game-item">
+          <img src="https://m.media-amazon.com/images/M/MV5BZGViZWQ4MGMtZTQwZS00NDEwLWE2MmQtNWZiM2VlMzRlNmJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Expedition 33 Cover" />
+          <span>Expedition 33</span>
+        </div>
+        <div class="game-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/The_Elder_Scrolls_IV_Oblivion_cover.png" alt="Oblivion Cover" />
+          <span>The Elder Scrolls IV: Oblivion</span>
+        </div>
+        <div class="game-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/7/7f/DOOM%2C_The_Dark_Ages_Game_Cover.jpeg" alt="Doom The Dark Ages Cover" />
+          <span>Doom: The Dark Ages</span>
+        </div>
+      </div>
+    </article>
+    <article class="songs-box">
+      <h3>My Current Favorite Songs</h3>
+      <div class="songs-row">
+        <div class="song-item">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fe/7e/54/fe7e54a4-97c0-2230-6cc0-8d1ea3928c65/198704405587_Cover.jpg/600x600bf-60.jpg" alt="Upside Down by 54 Ultra Cover" />
+          <span><a href="https://open.spotify.com/track/2ykiSY1uHTHCBVpbym4Uff" target="_blank">Upside Down</a><br><small>54 Ultra</small></span>
+        </div>
+        <div class="song-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Third_eye_blind_self_titled.jpg/250px-Third_eye_blind_self_titled.jpg" alt="Jumper by Third Eye Blind Cover" />
+          <span><a href="https://open.spotify.com/track/3354J49VpkbZJho7Ztdzpw" target="_blank">Jumper</a><br><small>Third Eye Blind</small></span>
+        </div>
+        <div class="song-item">
+          <img src="https://shop.beachbunnymusic.com/cdn/shop/files/BB_CD_Front.png?v=1746211653&width=2367" alt="Clueless by Beach Bunny Cover" />
+          <span><a href="https://open.spotify.com/track/376wj98YMXAnWEAWDhhEIj" target="_blank">Clueless</a><br><small>Beach Bunny</small></span>
+        </div>
+      </div>
+    </article>
+    <article class="contact-box">
+      <h3>Contact Me</h3>
+      <div class="contact-row">
+        <a href="https://www.instagram.com/robertl1096" target="_blank" class="contact-item" title="Instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram Icon">
+          <span>Instagram</span>
+        </a>
+        <a href="mailto:emailaddress@example.com" class="contact-item" title="Email">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" alt="Email Icon">
+          <span>Email</span>
+        </a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Robert Leon.</p>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 </body>
 </html>

@@ -1,1 +1,570 @@
-/* Add you CSS here */
+/* Import a fancier font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap');
+
+/* Use Pacifico for headings and Quicksand for body text */
+body {
+  font-family: 'Quicksand', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* light blue background for the page */
+  padding-top: 60px; /* Add space for fixed navbar */
+}
+
+/* Use Pacifico for headings and navigation, but lighter weight for less thickness */
+h1, h2, h3, .cta-heading, .site-navbar a, .more-about-title {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* Reduce font size slightly for headings to make them appear less thick */
+h1, .cta-heading {
+  font-size: 2.2em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3, .more-about-title {
+  font-size: 1.2em;
+}
+
+/* Navigation bar styles */
+.site-navbar {
+  background-color: #15697a;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(30, 90, 120, 0.10);
+}
+.site-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+}
+.site-navbar li {
+  margin: 0 18px;
+}
+.site-navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.site-navbar a:hover {
+  color: #3ed6c1;
+}
+
+/* Style the CTA banner */
+.cta-banner {
+  background-image: url('img/laptop.jpg');
+  background-size: cover; /* cover the whole banner */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Add a light overlay using a semi-transparent background color */
+  background-color: rgba(30, 144, 163, 0.85); /* teal-blue with opacity */
+  background-blend-mode: lighten;
+  color: #ffffff; /* white text for contrast */
+  padding: 60px 20px; /* tall banner with space around content */
+  text-align: center; /* center all text */
+  position: relative;
+}
+.cta-banner .about-box {
+  background: #fff;
+  color: #15697a;
+  max-width: 500px;
+  margin: 0 auto 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(30, 90, 120, 0.10);
+  padding: 32px 24px 24px 24px;
+  position: relative;
+  z-index: 1;
+}
+.cta-banner .about-box .cta-heading {
+  background: none;
+  color: #15697a;
+  padding: 0;
+  box-shadow: none;
+  margin-bottom: 18px;
+}
+.cta-banner .about-box .cta-description {
+  color: #1e3a4c;
+  margin-bottom: 0;
+}
+
+/* Main heading style */
+.cta-banner h1 {
+  font-size: 3.5em; /* large heading */
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Description style */
+.cta-description {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Call-to-action button style */
+.cta-button {
+  display: inline-block;
+  background-color: #3ed6c1; /* bright teal button */
+  color: #1e3a4c; /* dark blue text for contrast */
+  padding: 16px 36px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px; /* slightly rounded corners */
+  box-shadow: 0 2px 8px rgba(30, 90, 120, 0.15); /* subtle shadow */
+  transition: background 0.2s;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  background-color: #2bb8a0; /* slightly darker teal on hover */
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Simple site header style */
+.site-header {
+  background-color: #15697a; /* darker teal for distinction */
+  color: #ffffff;
+  padding: 18px 0;
+  text-align: center;
+}
+
+/* Site name style */
+.site-header h2 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Info section with two columns */
+.info-section {
+  max-width: 800px;
+  margin: 40px auto 0 auto; /* center on page with space above */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 90, 120, 0.15);
+  overflow: hidden; /* keep corners rounded */
+  text-align: center; /* center text for small screens */
+}
+
+/* Columns for image and text */
+.info-image,
+.info-text {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+/* Add spacing between columns */
+.info-image {
+  margin-right: 4%;
+}
+
+/* Make image responsive */
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Make the image in the cta-banner smaller, with a white background and space for a name below */
+.cta-banner .info-image {
+  border-radius: 14px;
+  padding: 18px 0 8px 0;
+  width: fit-content;
+  margin: 0 auto 18px auto;
+  box-shadow: 0 2px 8px rgba(30, 90, 120, 0.10);
+  text-align: center;
+}
+.cta-banner .info-image img {
+  width: 100%; /* was 30%, now 50% bigger */
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 8px auto;
+  border-radius: 12px;
+  border: 4px solid #fff; /* white border */
+}
+
+/* White background for the cta-heading */
+.cta-banner .cta-heading {
+  background: #fff;
+  color: #15697a;
+  display: inline-block;
+  padding: 18px 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(30, 90, 120, 0.10);
+  margin-bottom: 18px;
+}
+
+/* Info text styles */
+.info-text h3 {
+  color: #15697a;
+  font-size: 1.8em; /* was 1.5em, now 20% bigger */
+  margin-top: 0;
+}
+
+.info-text p {
+  color: #1e3a4c;
+  font-size: 1.1em;
+  margin-top: 12px;
+}
+
+/* Skills row horizontal layout */
+.skills-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30, 90, 120, 0.08);
+  padding: 14px 18px;
+  min-width: 80px;
+}
+.skill-item img {
+  width: 48px; /* was 36px */
+  height: 48px;
+  margin-bottom: 10px;
+}
+.skill-item span {
+  color: #15697a;
+  font-weight: bold;
+  font-size: 1.15em; /* was 1em */
+}
+@media (max-width: 600px) {
+  .skills-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .skill-item {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* About row: image and about box side by side */
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.cta-banner .info-image {
+  margin: 0;
+  min-width: 160px;
+  max-width: 220px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+.cta-banner .about-box {
+  flex: 1 1 320px;
+  min-width: 220px;
+}
+@media (max-width: 700px) {
+  .about-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .cta-banner .info-image,
+  .cta-banner .about-box {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Favorite games box styles */
+.games-box {
+  background: #fff;
+  color: #15697a;
+  max-width: 800px;
+  margin: 32px auto 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(30, 90, 120, 0.10);
+  padding: 28px 20px 20px 20px;
+  text-align: center;
+}
+.games-box h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.games-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.game-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7fafc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30, 90, 120, 0.06);
+  padding: 14px 12px;
+  min-width: 120px;
+  max-width: 160px;
+}
+.game-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(30, 90, 120, 0.10);
+}
+.game-item span {
+  color: #15697a;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .games-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .game-item {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Favorite songs box styles */
+.songs-box {
+  background: #fff;
+  color: #15697a;
+  max-width: 800px;
+  margin: 32px auto 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(30, 90, 120, 0.10);
+  padding: 28px 20px 20px 20px;
+  text-align: center;
+}
+.songs-box h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.songs-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.song-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7fafc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30, 90, 120, 0.06);
+  padding: 14px 12px;
+  min-width: 120px;
+  max-width: 160px;
+}
+.song-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(30, 90, 120, 0.10);
+}
+.song-item span {
+  color: #15697a;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+.song-item small {
+  font-weight: normal;
+  color: #1e3a4c;
+}
+@media (max-width: 700px) {
+  .songs-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .song-item {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Projects box styles */
+.projects-box {
+  background: #fff;
+  color: #15697a;
+  max-width: 800px;
+  margin: 32px auto 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(30, 90, 120, 0.10);
+  padding: 28px 20px 20px 20px;
+  text-align: center;
+}
+.projects-box h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.projects-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7fafc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(30, 90, 120, 0.06);
+  padding: 18px 18px;
+  min-width: 120px;
+  max-width: 180px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #15697a;
+}
+@media (max-width: 700px) {
+  .projects-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .project-item {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+/* More about title style */
+.more-about-title {
+  text-align: center;
+  color: #15697a;
+  font-size: 1.5em;
+  margin: 40px 0 18px 0;
+  letter-spacing: 1px;
+}
+
+/* Site footer style */
+.site-footer {
+  background-color: #15697a; /* same as header */
+  color: #ffffff;
+  padding: 18px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Footer navigation styles */
+.site-footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+
+.site-footer nav ul li {
+  display: inline;
+  margin: 0 12px;
+}
+
+.site-footer nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.site-footer nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contact box styles */
+.contact-box {
+  background: #fff;
+  color: #15697a;
+  max-width: 500px;
+  margin: 32px auto 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(30, 90, 120, 0.10);
+  padding: 28px 20px 20px 20px;
+  text-align: center;
+}
+.contact-box h3 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #15697a;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.contact-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  filter: grayscale(0.2) brightness(0.9);
+  transition: filter 0.2s;
+}
+.contact-item:hover,
+.contact-item:focus {
+  color: #3ed6c1;
+}
+.contact-item:hover img,
+.contact-item:focus img {
+  filter: none;
+}
+@media (max-width: 600px) {
+  .contact-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
